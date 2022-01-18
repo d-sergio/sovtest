@@ -1,0 +1,18 @@
+.yamaps__container{
+    width: 100%;
+    height: 500px;
+}
+
+@media screen and (max-width: 767px) {
+    .yamaps__container{
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .yamaps__container{
+        width: 100%;
+        height: 400px;
+    }
+}

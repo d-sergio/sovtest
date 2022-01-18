@@ -1,0 +1,11 @@
+.catalog__link{
+    padding-left: 13px;
+    margin-bottom: 0.75rem;
+
+    background-image: url("../../images/ui/square.svg");
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: 0 10px;
+
+    cursor: pointer;
+}

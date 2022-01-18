@@ -1,0 +1,80 @@
+.button__base {
+    border: 0;
+    border-radius: 0;
+
+    outline: none;
+    cursor: pointer;
+
+    color: #055c6a;  
+    background: #ffcc00;  
+}
+
+.button_black {
+    color: #000000;
+}
+
+.button_green {
+    background: #055c6a;
+
+    color: #ffcc00;
+}
+
+.button_submit{
+    width: 100%;
+    height: 2.63rem;
+}
+
+.button__size_details{
+    width: 100%;
+    height: 3.25rem;
+}
+
+.button__size_info{
+    height: 2.2rem;
+    width: 13.75rem;
+}
+
+@media screen and (max-width: 300px){
+    .button__size_info{
+        width: 10rem
+    };
+}
+
+.button__size_read{
+    width: 10.38rem;
+    height: 1.8rem;
+}
+
+.button__size_large{
+    width: 17rem;
+    height: 2.8rem;
+}
+
+
+
+@media screen and (max-width: 310px){
+    .button__size_large{
+        width: 14rem;
+        height: 2.8rem;
+    }
+}
+.button_spacing_1{
+    letter-spacing: 1px;
+}
+
+.button__size_request{
+    width: 17rem;
+    height: 2.8rem;
+}
+
+@media screen and (max-width: 280px){
+    .button__size_request{
+        width: 13.5rem;
+    }
+}
+
+@media screen and (min-width: 281px) and (max-width: 1024px){
+    .button__size_request{
+        width: 14rem;
+    }
+}

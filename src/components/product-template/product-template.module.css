@@ -1,0 +1,195 @@
+/**Навигация:
+*
+* @1 Главный блок
+* @2 Спойлеры
+* @3 Рекомендации
+* @4 Может заинтересовать
+* @5 Основные характеристики
+*
+*/
+
+.product__container{
+}
+
+
+/* >>>>>>>>>> @1 Главный блок <<<<<<<<<< */
+
+/*.product__image{
+    display: flex;
+    justify-content: space-around;
+}
+
+.product__image img{
+    width: 100%;
+    height: auto;
+}*/
+
+.product__main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    height: 8rem;
+
+    margin-top: 2rem;
+}
+
+.product__main ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product__buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px){
+    .product__main{
+        flex-direction: column;
+        justify-content: space-between;
+    
+        height: 240px;
+    }
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px){
+    .product__buttons{
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 960px){
+    .product__buttons{
+        width: 45%
+    }
+}
+
+/* >>>>>>>>>> @2 Спойлеры <<<<<<<<<< */
+
+.product__description{
+    margin-top: 4rem;
+}
+
+.product__descText{
+    text-align: justify;
+    margin-top: 1.7rem;
+}
+
+.product__specifications{    
+    margin-top: 3.2rem;
+}
+
+.product__specifications ul{
+    margin-top: 1.7rem;
+}
+
+.product__specifications ul li{
+    padding-left: 30px;
+    line-height: 1.875rem;
+    background-image: url("../../images/ui/el.png");
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+    background-size: 20px
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px){
+    .product__description{
+        margin-top: 2rem;
+    }
+}
+
+/* >>>>>>>>>> @3 Рекомендации <<<<<<<<<< */
+
+.product__colors{
+    margin-top: 3.2rem;
+}
+
+.product__colors p{
+    margin-bottom: 0.9rem;
+}
+
+/* >>>>>>>>>> @4 Может заинтересовать <<<<<<<<<< */
+
+.product__also{
+    max-width: 1030px;
+    margin-top: 4rem;
+}
+
+.product__also>p{
+    margin-bottom: 2.2rem;
+}
+
+.product__gallery{
+    max-width: 1220px;
+}
+
+.product__catalog{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px){
+    .product__gallery{
+        display: none;
+    }
+
+    .product__catalog{
+        display: block;
+    }
+
+    .product__catalog ul{
+        margin-top: 0.75rem;
+        
+    }
+}
+
+@media screen and (max-width: 370px){
+    .product__also{
+        line-height: 1.55;
+        margin-top: 2rem;
+    }
+
+    .product__also>p{
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .product__catalog{
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 471px) and (max-width: 768px){
+    .product__catalog{
+        margin-left: 13%;
+    }
+}
+
+/* >>>>>>>>>> @5 Основные характеристики <<<<<<<<<< */
+
+.font__specifications li{
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.font__specifications li::first-letter{
+    font-size: 1.25rem;
+}
+
+@media screen and (max-width: 309px) {
+    .font__specifications li{
+        text-transform: none;
+    }
+    
+    .font__specifications li::first-letter{
+        font-size: 1rem;
+    }
+}

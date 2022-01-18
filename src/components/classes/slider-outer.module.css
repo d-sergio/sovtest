@@ -1,0 +1,26 @@
+/*
+    Внешний контейнер для слайдера.
+    Центрирует по горизонтали и задаёт оступы от краёв окна
+*/
+
+.slider__outer{
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 95px;
+    padding-right: 95px;
+}
+
+@media screen and (min-width: 690px) and (max-width: 1024px) {
+    .slider__outer{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 689px) {
+    .slider__outer{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

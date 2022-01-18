@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Продукция",
+        "link": "/production"
+    },
+    {
+        "name": "Мультимедиа",
+        "link": "/media"
+    },
+    {
+        "name": "Новости",
+        "link": "/news"
+    },
+    {
+        "name": "О нас",
+        "link": "/about"
+    },
+    {
+        "name": "Контакты",
+        "link": "/contact"
+    }
+]

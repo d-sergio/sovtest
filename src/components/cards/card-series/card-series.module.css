@@ -1,0 +1,298 @@
+/*  Навигация
+    @1 Main rules
+    @2 Desktop
+    @3 Tablet
+    @4 Mobile
+*/
+
+/* >>>>>>>>>>   @1  Main rules  <<<<<<<<<< */
+
+.series__container{
+    max-width: 1230px;
+
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.series__top{
+    display: inline-flex;
+}
+
+.series__image img{
+    display: inline-block; /* центрировать..*/
+    vertical-align: middle;  /* ..по вертикали */
+
+    max-width: 100%;
+    height: auto;
+    max-height: 450px;
+}
+
+.series__image{
+    line-height: 770px;
+}
+
+.series__description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    height: 770px;
+    width: 50%;
+
+    margin-top: -70px;
+}
+
+.series__name{
+    margin-bottom: 1rem;
+}
+
+.series__info{
+    margin-bottom: 1rem;
+    text-align: right;
+}
+
+.series__bottom{
+    margin-top: -150px;
+    text-align: right;
+}
+
+/* >>>>>>>>>>   @2  Desktop <<<<<<<<<< */
+
+@media screen and (min-width: 901px){
+    .series__image img{
+        margin-top: -100px;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1130px){
+    .series__image{
+        line-height: 770px;
+        width: 60%;
+    }
+
+    .series__image img{
+        max-height: 500px;
+        margin-left: 0;
+        margin-top: -240px;
+    }
+
+    .series__description{
+        width: 40%;
+        margin-top: -180px;
+    }
+
+    .series__bottom{
+        margin-top: -300px;
+    }
+}
+
+@media screen and (min-width: 1131px) and (max-width: 1300px){
+    .series__image img{
+        max-height: 500px;
+        margin-left: 0;
+        margin-top: -240px;
+    }
+
+    .series__bottom{
+        margin-top: -300px;
+    }
+
+    .series__description{
+        margin-top: -180px;
+    }
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1410px){
+    .series__image img{
+        max-height: 500px;
+        margin-left: 0;
+        margin-top: -240px;
+    }
+
+    .series__bottom{
+        margin-top: -300px;
+    }
+
+    .series__description{
+        margin-top: -180px;
+    }
+}
+
+@media screen and (min-width: 1411px) and (max-width: 1610px){
+    .series__image img{
+        margin-top: -150px;
+        max-height: 600px;
+    }
+
+    .series__description{
+        margin-top: -150px;
+    }
+
+    .series__bottom{
+        margin-top: -250px;
+    }
+}
+
+@media screen and (min-width: 1611px) and (max-width: 1730px){
+    .series__image img{
+        margin-top: -100px;
+    }
+
+    .series__description{
+        margin-top: -100px;
+    }
+
+    .series__bottom{
+        margin-top: -200px;
+    }
+}
+
+/* >>>>>>>>>>   @3  Tablet  <<<<<<<<<< */
+
+@media screen and (min-width: 768px) and (max-width: 900px){
+    .series__container{
+        display: flex;
+        flex-direction: column;
+        max-width: unset;
+    
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .series__top{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .series__image{
+        line-height: 500px;
+        width: 100%;
+
+        text-align: center;
+    }
+    
+    .series__image img{
+        display: inline-block; /* центрировать..*/
+        vertical-align: middle;  /* ..по вертикали */
+        margin-left: 0;
+
+        max-width: 100%;
+        max-height: 500px;
+        height: auto;
+    }
+
+    .series__description{
+        display: block;
+        align-self: flex-end;
+
+        flex-direction: unset;
+        justify-content: unset;
+        align-items: unset;  
+
+        text-align: right;
+    
+        height: auto;
+        width: 70%;
+    
+        margin-top: 0;
+    }
+
+    .series__info{
+        margin-bottom: 1rem;
+        text-align: right;
+    }
+
+    .series__bottom{
+        margin-top: 30px;
+        text-align: left;
+    }
+}
+
+/* >>>>>>>>>>   @4  Mobile  <<<<<<<<<< */
+
+@media screen and (min-width: 1px) and (max-width: 430px){
+    .series__image{
+        line-height: 300px;
+    }
+    
+    .series__image img{
+        max-height: 300px;
+    }
+}
+
+@media screen and (min-width: 431px) and (max-width: 590px){
+    .series__image{
+        line-height: 400px;
+    }
+    
+    .series__image img{
+        max-height: 400px;
+    }
+}
+
+@media screen and (min-width: 591px) and (max-width: 767px){
+    .series__image{
+        line-height: 500px;
+    }
+    
+    .series__image img{
+        max-height: 500px;
+    }
+}
+
+@media screen and (min-width: 1px) and (max-width: 767px){
+    .series__container{
+        display: flex;
+        flex-direction: column;
+        max-width: unset;
+    
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .series__top{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .series__image{
+        width: 100%;
+
+        text-align: center;
+    }
+    
+    .series__image img{
+        display: inline-block; /* центрировать..*/
+        vertical-align: middle;  /* ..по вертикали */
+        margin-left: 0;
+
+    
+        max-width: 100%;
+        height: auto;
+    }
+
+    .series__description{
+        display: block;
+
+        flex-direction: unset;
+        justify-content: unset;
+        align-items: unset;  
+
+        text-align: left;
+    
+        height: auto;
+        width: 100%;
+    
+        margin-top: 0;
+    }
+
+    .series__info{
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    .series__bottom{
+        display: none;
+    }
+}

@@ -1,0 +1,33 @@
+.cardTopnews__container{
+}
+
+.cardTopnews__left{
+    float: left;
+    width: 412px;
+    padding-right: 20px;
+}
+
+.cardTopnews__text{
+    text-align: justify;
+}
+
+.cardTopnews__right{
+}
+
+.cardTopnews__margin{
+    margin-bottom: 1rem;
+}
+
+.cardTopnews__clear{
+    clear: both;
+}
+
+@media screen and (max-width: 800px){
+    .cardTopnews__left{
+        width: 100%;
+        margin-bottom: 1rem;
+        float: none;
+
+        text-align: center;
+    }
+}

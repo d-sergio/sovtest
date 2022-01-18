@@ -1,0 +1,43 @@
+.bs__outer{
+    max-width: 1920px;
+    height: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url("../../../images/ui/new_wave.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bs__container{
+    max-width: 1270px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+@media screen and (max-width: 690px){
+    .bs__outer{
+        background-image: none;
+    }
+
+    .bs__container{
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+}
+
+@media screen and (min-width: 691px) and (max-width: 767px){
+    .bs__outer{
+        background-image: none;
+    }
+
+    .bs__container{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}

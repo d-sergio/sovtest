@@ -1,0 +1,11 @@
+.news__actualTitle{
+    clear: both;
+    margin-top: 4rem;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 690px){
+    .news__actualTitle{
+        padding-left: 30px;
+    }
+}

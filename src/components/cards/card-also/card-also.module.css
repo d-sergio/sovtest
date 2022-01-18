@@ -1,0 +1,32 @@
+/*Дополнительный контейнер создаёт минимальное пространство между карточками*/
+.also__spaceAround{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.also__content{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 470px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 0.625rem 0.45rem 0.45rem 0.45rem;
+
+    border: 5px solid #ffc308;
+}
+
+.also__name{
+    line-height: 1.55rem;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+}
+
+.also__img{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 400px;
+}

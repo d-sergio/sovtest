@@ -1,0 +1,297 @@
+/**Навигация:
+*
+*   @1 Модификаторы
+*   @2 С автоувеличением font-size первой буквы для заголовков
+*   @3 Автоувеличение первой буквы текста для заголовков
+*   @4 Шрифты без увеличения первой буквы
+*   (обходим баг Firefox c :first-letter, когда браузер добавляет
+*   лишнее пространство рядом с текстом)
+*   @5 Шрифты страницы продукта Details
+*   @6 Шрифты главного слайдера
+*
+*   В заголовках и других местах часто для маленьких букв используется
+*   начертание заглавных. Для этого подключаются шрифты @2 и модификатор
+*   .font_uppercase
+*/
+
+/* >>>>>>>>>>   @1  Модификаторы    <<<<<<<<<< */
+
+.fonts__lineheight_base{
+    line-height: 1.875rem;
+}
+
+.fonts__lineheight_halfScreen{
+    line-height: 1.688rem;
+}
+
+.fonts__lineheight_mobile{
+    line-height: 1.625rem;
+}
+
+.font_uppercase{
+    text-transform: uppercase;
+}
+
+.font_yellow{
+    color:  #ffcc00;
+}
+
+.font_black{
+    color:  #000000;
+}
+
+.font_white{
+    color:  #ffffff;
+}
+
+.font_green{
+    color: #055c6a;
+}
+
+.font_marginH3{
+    margin-bottom: 2.5rem;
+}
+
+@media screen and (max-width: 767px) {
+    .font_marginH3{
+        margin-bottom: 1.5rem;
+    }
+}
+
+.font_marginNews{
+    margin-top: 2rem;
+}
+
+.font_textRight{
+    text-align: right;
+}
+
+.font_footerLetterSpacing{
+    letter-spacing: -1px;
+}
+
+.font__montserratBold{
+    font-family: "MontserratBold";
+}
+
+.font__montserratLight{
+    font-family: "MontserratLight";
+}
+
+/* >>>>>>>>>>   @2  С автоувеличением первой буквы для заголовков    <<<<<<<<<< */
+
+.font__H1{  
+    font-size: 3.052rem;
+}
+
+.font__H2up{
+    font-size: 2.441rem;
+}
+
+.font__H3up{    /*Масштабируется при уменьшении окна. См. ниже @media*/
+    font-size: 1.953rem;
+}
+
+.font__H4up{    /*Масштабируется при уменьшении окна. См. ниже @media*/
+    font-size: 1.563rem;
+}
+
+.font__H5up{
+    font-size: 1.25rem;
+}
+
+.font__base_up{
+    font-size: 1rem;
+}
+
+.font__lowH{
+    font-size: 0.8rem;
+}
+
+.font__lowH2{
+    font-size: 0.64rem;
+}
+
+@media screen and (min-width: 1px) and (max-width: 370px){
+    .font__H3up{
+        font-size: 1.25rem;
+    }
+
+    .font__H4up{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 371px) and (max-width: 490px){
+    .font__H3up{
+        font-size: 1.563rem;
+    }
+
+    .font__H4up{
+        font-size: 1.25rem;
+    }
+}
+
+/* >>>>>>>>>>   @3  Автоувеличение первой буквы текста для заголовков <<<<<<<<<< */
+.font__H2up::first-letter{
+    font-size: 3.052rem;
+}
+
+.font__H3up::first-letter{
+    font-size: 2.441rem;
+}
+
+.font__H4up::first-letter{
+    font-size: 1.953rem;
+}
+
+.font__H5up::first-letter{
+    font-size: 1.563rem;
+}
+
+.font__base_up::first-letter{
+    font-size: 1.25rem;
+}
+
+.font__lowH::first-letter{
+    font-size: 1rem;
+}
+
+.font__lowH2::first-letter{
+    font-size: 0.8rem;
+}
+
+/* >>>>>>>>>>   @4  Шрифты без увеличения первой буквы (обходим баг Firefox c :first-letter)*/
+
+.font__H2low{ 
+    font-size: 2.441rem;
+}
+
+.font__H3low{   /*Масштабируется*/
+    font-size: 1.953rem;
+}
+
+.font__H4low{
+    font-size: 1.563rem;
+}
+
+.font__H5low{
+    font-size: 1.25rem;
+}
+
+@media screen and (min-width: 1px) and (max-width: 370px){
+    .font__H2low{
+        font-size: 1.563rem;
+    }
+
+    .font__H3low{
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 371px) and (max-width: 490px){
+    .font__H2low{
+        font-size: 1.953rem;
+    }
+
+    .font__H3low{
+        font-size: 1.563rem;
+    }
+}
+
+.font__low{
+    font-size: 0.8rem;
+}
+
+.font__low2{
+    font-size: 0.64rem;
+}
+
+/* >>>>>>>>>>   @5  Шрифты страницы продукта <<<<<<<<<< */
+
+.font__H5_details{ 
+    font-size: 1.25rem;
+}
+
+.font__H4_geometry{
+    font-size: 1.563rem;
+}
+
+.font__H4_geometry::first-letter{
+    font-size: 1.953rem;
+}
+
+@media screen and (max-width: 317px){
+    .font__H5_details{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 318px) and (max-width: 960px){
+    .font__H5_details{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 317px){
+    .font__H4_geometry{
+        font-size: 0.8rem;
+    }
+}
+
+
+@media screen and (min-width: 318px) and (max-width: 390px){
+    .font__H4_geometry{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 391px) and (max-width: 1160px){
+    .font__H4_geometry{
+        font-size: 1.25rem;
+    }
+}
+
+/* >>>>>>>>>>   @6  Шрифты главного слайдера    <<<<<<<<<< */
+
+.fonts__series_big{
+    font-size: 6.854rem;
+}
+
+@media screen and (min-width: 1px) and (max-width: 320px){
+    .fonts__series_big{
+        font-size: 2.369rem;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 410px){
+    .fonts__series_big{
+        font-size: 3.998rem;
+    }
+}
+
+@media screen and (min-width: 411px) and (max-width: 530px){
+    .fonts__series_big{
+        font-size: 5.063rem;
+    }
+}
+
+.font__series_name{
+    color:  #ffcc00;
+}
+
+@media screen and (min-width: 1px) and (max-width: 900px){
+    .font__series_name{
+        color: #055c6a;
+    }
+}
+
+.font__series_info{
+    color:  #ffcc00;
+}
+
+@media screen and (min-width: 1px) and (max-width: 900px){
+    .font__series_info{
+        color: #055c6a;
+    }
+}

@@ -1,0 +1,46 @@
+/*Стили для работы с изображениями
+.images__scalable - изображение подгоняется под размер родителя
+    с сохранением пропорций
+
+.images__post_floatLeft/.images__post_floatRight - обтекание изображения
+    текстом слева/справа. В мобильном варианте изображение будет
+    расположено по центру без обтекания текстом
+*/
+.images__scalable{
+    max-width: 100%;
+    height: auto;
+}
+
+.images__post_floatLeft{
+    float: left;
+    width: 45%;
+    height: auto;
+    margin: 1.5rem 1.5rem 1.5rem auto;
+}
+
+@media screen and (max-width: 767px){
+    .images__post_floatLeft{
+        display: block;
+        margin: 1.5rem auto 1.5rem auto;
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.images__post_floatRight{
+    float: right;
+    width: 45%;
+    height: auto;
+    margin: 1.5rem auto 1.5rem 1.5rem;
+}
+
+@media screen and (max-width: 767px){
+    .images__post_floatRight{
+        display: block;
+        margin: 1.5rem auto 1.5rem auto;
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}

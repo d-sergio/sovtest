@@ -1,0 +1,574 @@
+/**  Навигация
+*    @1  Стрелка влево
+*    @2  Стрелка вправо
+*    @3  Стрелка вверх
+*    @4  Стрелка вниз
+*    @5  Большая стрелка вправо главного слайдера
+*    @6  Стрелка влево главного слайдера
+*    @7  Контейнер для слайдера на странице продукта
+*    @8  Пространство между стрелкой и слайдером
+*    @9  Пространство между стрелкой и Главным слайдером
+*/
+
+/* >>>>>>>>>>   @1 Стрелка влево    <<<<<<<<<<< */
+
+.arrow__left{ 
+    position: relative;
+    align-self: center;
+    width: 40px;
+    height: 65px;
+    cursor: pointer;
+}
+
+.arrow__left::before, .arrow__left::after{
+    position: absolute;
+    content: " ";
+    height: 45px;
+    width: 12px;
+    background-color: black;
+}
+
+.arrow__left::before{
+    transform: rotate(45deg);
+    left: 14px;
+    top: -2px;
+}
+
+.arrow__left::after{
+    transform: rotate(-45deg);
+    top: 22px;
+    left: 14px
+}
+@media screen and (max-width: 768px) {
+    .arrow__left{
+        width: 17px;
+        height: 21px;
+        align-self: center;
+    }
+
+    .arrow__left::before, .arrow__left::after{
+        position: absolute;
+        content: " ";
+        height: 15px;
+        width: 4px;
+    }
+    
+    .arrow__left::before{
+        transform: rotate(45deg);
+        top: -1px;
+        left: 7px;
+    }
+    
+    .arrow__left::after{
+        transform: rotate(-45deg);
+        top: 7px;
+        left: 7px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .arrow__left{
+        width: 21px;
+        height: 34px;
+        align-self: center;
+    }
+
+    .arrow__left::before, .arrow__left::after{
+        position: absolute;
+        content: " ";
+        height: 24px;
+        width: 6px;
+        background-color: black;
+    }
+    
+    .arrow__left::before{
+        transform: rotate(45deg);
+        top: -2px;
+        left: 7px;
+    }
+    
+    .arrow__left::after{
+        transform: rotate(-45deg);
+        top: 11px;
+        left: 7px;
+    }
+}
+
+/* >>>>>>>>>>   @2  Стрелка вправо  <<<<<<<<<<< */
+
+.arrow__right{
+    position: relative;
+    align-self: center;
+    width: 40px;
+    height: 65px;
+    cursor: pointer;
+}
+
+.arrow__right::before, .arrow__right::after{
+    position: absolute;
+    content: " ";
+    height: 45px;
+    width: 12px;
+    background-color: black;
+}
+
+.arrow__right::before{
+    transform: rotate(-45deg);
+    left: 14px;
+    top: -2px;
+}
+
+.arrow__right::after{
+    transform: rotate(45deg);
+    top: 22px;
+    left: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .arrow__right{        
+        width: 17px;
+        height: 21px;
+        margin-top: 0px;
+        align-self: center;
+    }
+    
+    .arrow__right::before, .arrow__right::after{
+        position: absolute;
+        content: " ";
+        height: 15px;
+        width: 4px;
+    }
+    
+    .arrow__right::before{
+        transform: rotate(-45deg);
+        top: -1px;
+        left: 7px;
+    }
+    
+    .arrow__right::after{
+        transform: rotate(45deg);
+        top: 7px;
+        left: 7px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .arrow__right{        
+        width: 21px;
+        height: 34px;
+        margin-top: 0px;
+        align-self: center;
+    }
+    
+    .arrow__right::before, .arrow__right::after{
+        position: absolute;
+        content: " ";
+        height: 24px;
+        width: 6px;
+        background-color: black;
+    }
+    
+    .arrow__right::before{
+        transform: rotate(-45deg);
+        top: -2px;
+        left: 7px;
+    }
+    
+    .arrow__right::after{
+        transform: rotate(45deg);
+        top: 11px;
+        left: 7px;
+    }
+}
+
+/* >>>>>>>>>>   @3  Стрелка вверх   <<<<<<<<<<< */
+
+.arrow__up{
+    position: relative;
+    align-self: center;
+    width: 64px;
+    height: 41px;
+    cursor: pointer;
+}
+
+.arrow__up::before, .arrow__up::after{
+    position: absolute;
+    content: " ";
+    height: 45px;
+    width: 12px;
+    background-color: black;
+}
+
+.arrow__up::before{
+    transform: rotate(45deg);
+    left: 14px;
+    top: -2px;
+}
+
+.arrow__up::after{
+    transform: rotate(-45deg);
+    top: -2px;
+    left: 38px;
+}
+
+@media screen and (max-width: 768px) {
+    .arrow__up{
+        width: 20px;
+        height: 14px;
+        margin-left: 0;
+        align-self: center;
+        margin-right: 0;
+    }
+
+    .arrow__up::before, .arrow__up::after{
+        position: absolute;
+        content: " ";
+        height: 15px;
+        width: 4px;
+    }
+    
+    .arrow__up::before{
+        transform: rotate(45deg);
+        top: 0px;
+        left: 4px;
+    }
+    
+    .arrow__up::after{
+        transform: rotate(-45deg);
+        top: 0px;
+        left: 12px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .arrow__up{
+        width: 34px;
+        height: 21px;
+        align-self: center;
+    }
+
+    .arrow__up::before, .arrow__up::after{
+        position: absolute;
+        content: " ";
+        height: 24px;
+        width: 6px;
+        background-color: black;
+    }
+    
+    .arrow__up::before{
+        transform: rotate(45deg);
+        top: -2px;
+        left: 7px;
+    }
+    
+    .arrow__up::after{
+        transform: rotate(-45deg);
+        top: -2px;
+        left: 21px;
+    }
+}
+
+/* >>>>>>>>>>   @4  Стрелка вниз    <<<<<<<<<<< */
+
+.arrow__down{
+    position: relative;
+    align-self: center;
+    width: 64px;
+    height: 41px;
+    cursor: pointer;
+}
+
+.arrow__down::before, .arrow__down::after{
+    position: absolute;
+    content: " ";
+    height: 45px;
+    width: 12px;
+    background-color: black;
+}
+
+.arrow__down::before{
+    transform: rotate(-45deg);
+    left: 14px;
+    top: -2px;
+}
+
+.arrow__down::after{
+    transform: rotate(45deg);
+    top: -2px;
+    left: 38px;
+}
+
+@media screen and (max-width: 768px) {
+    .arrow__down{
+        width: 20px;
+        height: 14px;
+        margin-left: 0;
+        align-self: center;
+        margin-right: 0;
+    }
+
+    .arrow__down::before, .arrow__down::after{
+        position: absolute;
+        content: " ";
+        height: 15px;
+        width: 4px;
+    }
+    
+    .arrow__down::before{
+        transform: rotate(45deg);
+        top: 0px;
+        left: 12px;
+    }
+    
+    .arrow__down::after{
+        transform: rotate(-45deg);
+        top: 0px;
+        left: 4px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .arrow__down{
+        width: 34px;
+        height: 21px;
+        align-self: center;
+    }
+
+    .arrow__down::before, .arrow__down::after{
+        position: absolute;
+        content: " ";
+        height: 24px;
+        width: 6px;
+        background-color: black;
+    }
+    
+    .arrow__down::before{
+        transform: rotate(45deg);
+        top: -2px;
+        left: 21px;
+    }
+    
+    .arrow__down::after{
+        transform: rotate(-45deg);
+        top: -2px;
+        left: 7px;
+    }
+}
+
+/* >>>>>>>>>>   @5  Большая стрелка вправо главного слайдера    <<<<<<<<<<< */
+
+.arrow__right_series{
+    position: relative;
+    width: 82px;
+    height: 128px;
+    cursor: pointer;
+    margin-top: 150px;
+
+    
+}
+
+.arrow__right_series::before, .arrow__right_series::after{
+    position: absolute;
+    content: " ";
+    height: 90px;
+    width: 25px;
+    background-color: black;
+}
+
+.arrow__right_series::before{
+    left: 28px;
+    top: -4px;
+    transform: rotate(-45deg);
+}
+
+.arrow__right_series::after{
+    transform: rotate(45deg);
+    top: 42px;
+    left: 28px;
+}
+
+@media screen and (min-width: 1px) and (max-width: 590px) {
+    .arrow__right_series{
+        margin-top: 150px;
+    }
+}
+
+@media screen and (min-width: 591px) and (max-width: 767px) {
+    .arrow__right_series{
+        margin-top: 230px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .arrow__right_series{        
+        width: 21px;
+        height: 34px;
+    }
+    
+    .arrow__right_series::before, .arrow__right_series::after{
+        position: absolute;
+        content: " ";
+        height: 24px;
+        width: 6px;
+        background-color: black;
+    }
+    
+    .arrow__right_series::before{
+        transform: rotate(-45deg);
+        top: -2px;
+        left: 7px;
+    }
+    
+    .arrow__right_series::after{
+        transform: rotate(45deg);
+        top: 11px;
+        left: 7px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .arrow__right_series{
+        position: relative;
+        width: 40px;
+        height: 65px;
+        margin-top: 230px;
+        cursor: pointer;
+    }
+
+    .arrow__right_series::before, .arrow__right_series::after{
+        position: absolute;
+        content: " ";
+        height: 45px;
+        width: 12px;
+        background-color: black;
+    }
+
+    .arrow__right_series::before{
+        transform: rotate(-45deg);
+        left: 14px;
+        top: -2px;
+    }
+
+    .arrow__right_series::after{
+        transform: rotate(45deg);
+        top: 22px;
+        left: 14px;
+    }
+}
+
+/* >>>>>>>>>>   @6  Стрелка влево главного слайдера <<<<<<<<<<< */
+
+.arrow__left_series{
+    position: relative;
+    align-self: center;
+    width: 40px;
+    height: 65px;
+    cursor: pointer;
+
+    margin-top: 350px;
+}
+
+.arrow__left_series::before, .arrow__left_series::after{
+    position: absolute;
+    content: " ";
+    height: 45px;
+    width: 12px;
+    background-color: black;
+}
+
+.arrow__left_series::before{
+    transform: rotate(45deg);
+    left: 14px;
+    top: -2px;
+}
+
+.arrow__left_series::after{
+    transform: rotate(-45deg);
+    top: 22px;
+    left: 14px
+}
+
+@media screen and (min-width: 1px) and (max-width: 590px) {
+    .arrow__left_series{
+        margin-top: 150px;
+    }
+}
+
+@media screen and (min-width: 591px) and (max-width: 767px) {
+    .arrow__left_series{
+        margin-top: 230px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .arrow__left_series{
+        width: 21px;
+        height: 34px;
+        align-self: unset;
+    }
+
+    .arrow__left_series::before, .arrow__left_series::after{
+        position: absolute;
+        content: " ";
+        height: 24px;
+        width: 6px;
+        background-color: black;
+    }
+    
+    .arrow__left_series::before{
+        transform: rotate(45deg);
+        top: -2px;
+        left: 7px;
+    }
+    
+    .arrow__left_series::after{
+        transform: rotate(-45deg);
+        top: 11px;
+        left: 7px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .arrow__left_series{
+        align-self: unset;
+        margin-top: 230px;
+    }
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1130px) {
+    .arrow__left_series{
+        margin-top: 170px;
+    }
+}
+
+@media screen and (min-width:1131px) and (max-width: 1400px) {
+    .arrow__left_series{
+        margin-top: 250px;
+    }
+}
+
+/* >>>>>>>>>>   @7  Контейнер для слайдера на странице продукта <<<<<<<<<<< */
+
+.arrow_slider{
+    display: flex;
+    flex-direction: row;
+}
+
+/* >>>>>>>>>>   @8  Пространство между стрелкой и слайдером <<<<<<<<<<< */
+
+.arrow__space{
+    width: 20px
+}
+
+/* >>>>>>>>>>   @9  Пространство между стрелкой и Главным слайдером    <<<<<<<<<<< */
+
+.arrow__space_series{
+    width: 42px
+}
+
+@media screen and (max-width: 1024px){
+    .arrow__space_series{
+        display: none;
+    }
+}

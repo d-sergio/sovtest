@@ -1,0 +1,342 @@
+/*Навигация:
+@1 Шрифты
+@2 С нами уже более 160 ведущих мировых предприятий
+@3 Контейнер
+@4 Кнопка
+*/
+
+.wellcometo__container{
+    position: relative;
+    margin-top: 85px;
+
+    max-width: 1920px;
+    height: 1144px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url("../../../images/main/wellcome.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.wellcometo__teamContainer{    
+    width: 77%;
+    text-align: left;
+}
+
+.wellcometo__team{
+    text-align: right;
+    padding-top: 50px;
+}
+
+.wellcometo__enterprises{
+    width: 73%;
+
+    margin-top: 150px;
+    margin-bottom: 60px;
+}
+
+.font__wellcome_number{
+    font-size: 3.998rem;
+}
+
+.wellcometo__button_mobile{
+    display: none;
+}
+
+.font__wellcome_team{   /* >>>>>>>>>> @1 Шрифты <<<<<<<<<< */
+    font-size: 3.157rem;
+}
+
+.font__wellcome_team::first-letter{
+    font-size: 5.063rem;
+}
+
+@media screen and (max-width: 310px){
+    .wellcometo__team{
+        padding-top: 0px;
+        text-align: center;
+    }
+
+    .wellcometo__teamContainer{
+        width: 100%;
+        text-align: center;
+    }
+
+    .font__wellcome_team{
+        font-size: 1.25rem;
+    }
+    
+    .font__wellcome_team::first-letter{
+        font-size: 1.563rem;
+    }
+
+    .font__wellcome_number{
+        font-size: 1.563rem;
+    }
+}
+
+@media screen and (min-width: 311px) and (max-width: 550px){
+    .wellcometo__team{
+        padding-top: 25px;
+        text-align: center;
+    }
+
+    .wellcometo__teamContainer{
+        width: 100%;
+        text-align: center;
+    }
+
+    .font__wellcome_team{
+        font-size: 1.563rem;
+    }
+    
+    .font__wellcome_team::first-letter{
+        font-size: 1.953rem;
+    }
+
+    .wellcometo__button{
+        text-align: center;
+    }
+
+    .font__wellcome_number{
+        font-size: 1.953rem;
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width: 1024px){
+    .wellcometo__team{
+        padding-top: 25px;
+    }
+
+    .wellcometo__teamContainer{
+        width: 100%;
+    }
+
+    .font__wellcome_team{
+        font-size: 1.999rem;
+    }
+    
+    .font__wellcome_team::first-letter{
+        font-size: 2.827rem;
+    }
+
+    .font__wellcome_number{
+        font-size: 2.441rem;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1085px){
+    .wellcometo__teamContainer{
+        width: 64%;
+        margin-left: -5px;
+    }
+
+    .font__wellcome_team{
+        font-size: 1.563rem;
+    }
+    
+    .font__wellcome_team::first-letter{
+        font-size: 1.953rem;
+    }
+
+    .font__wellcome_number{
+        font-size: 1.953rem;
+    }
+}
+
+@media screen and (min-width: 1086px) and (max-width: 1170px){
+    .wellcometo__teamContainer{
+        width: 70%;
+        margin-left: -5px;
+    }
+
+    .font__wellcome_team{
+        font-size: 1.999rem;
+    }
+    
+    .font__wellcome_team::first-letter{
+        font-size: 2.827rem;
+    }
+
+    .font__wellcome_number{
+        font-size: 2.441rem;
+    }
+}
+
+@media screen and (min-width: 1171px) and (max-width: 1225px){
+    .wellcometo__teamContainer{
+        width: 64%;
+    }
+
+    .font__wellcome_team{
+        font-size: 1.999rem;
+    }
+    
+    .font__wellcome_team::first-letter{
+        font-size: 2.827rem;
+    }
+
+    .font__wellcome_number{
+        font-size: 2.441rem;
+    }
+}
+
+@media screen and (min-width: 1226px) and (max-width: 1530px){
+    .wellcometo__teamContainer{
+        width: 64%;
+    }
+
+    .font__wellcome_team{
+        font-size: 2.074rem;
+    }
+    
+    .font__wellcome_team::first-letter{
+        font-size: 3.375rem;
+    }
+
+    .font__wellcome_number{
+        font-size: 3.052rem;
+    }
+}
+
+@media screen and (min-width: 1531px) and (max-width: 1849px){
+    .wellcometo__teamContainer{
+        width: 64%;
+    }
+
+    .font__wellcome_team{
+        font-size: 2.618rem;
+    }
+    
+    .font__wellcome_team::first-letter{
+        font-size: 4.236rem;
+    }
+}
+
+@media screen and (min-width: 1850px){
+    .wellcometo__teamContainer{
+        margin-left: -18px;
+    }
+}
+
+/*>>>>>>>>>> @2 С нами уже более 160 ведущих мировых предприятий <<<<<<<<<<*/
+@media screen and (max-width: 310px){
+    .wellcometo__enterprises{
+        width: 100%;
+    
+        margin-top: 30px;
+        margin-bottom: 60px;
+
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 311px) and (max-width: 550px){
+    .wellcometo__enterprises{
+        width: 100%;
+    
+        margin-top: 30px;
+        margin-bottom: 60px;
+
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width: 1024px){
+    .wellcometo__enterprises{   
+        width: 100%; 
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1170px){
+    .wellcometo__enterprises{    
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 1171px) and (max-width: 1380px){
+    .wellcometo__enterprises{    
+        margin-top: 45px;
+    }
+}
+
+@media screen and (min-width: 1381px) and (max-width: 1530px){
+    .wellcometo__enterprises{    
+        margin-top: 80px;
+    }
+}
+
+@media screen and (min-width: 1531px) and (max-width: 1610px){
+    .wellcometo__enterprises{    
+        margin-top: 60px;
+    }
+}
+
+@media screen and (min-width: 1611px) and (max-width: 1680px){
+    .wellcometo__enterprises{    
+        margin-top: 90px;
+    }
+}
+
+@media screen and (min-width: 1681px) and (max-width: 1880px){
+    .wellcometo__enterprises{    
+        margin-top: 120px;
+    }
+}
+
+/* >>>>>>>>>> @3 Контейнер <<<<<<<<<<*/
+@media screen and (min-width: 1px) and (max-width: 1024px){
+    .wellcometo__container{
+        margin-top: 30px;
+        background-image: none;
+        height: auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1054px){
+    .wellcometo__container{
+        height: 630px;
+    }
+}
+
+@media screen and (min-width: 1055px) and (max-width: 1190px){
+    .wellcometo__container{
+        height: 710px;
+    }
+}
+
+@media screen and (min-width: 1191px) and (max-width: 1360px){
+    .wellcometo__container{
+        height: 800px;
+    }
+}
+
+@media screen and (min-width: 1361px) and (max-width: 1600px){
+    .wellcometo__container{
+        height: 950px;
+    }
+}
+
+@media screen and (min-width: 1601px) and (max-width: 1730px){
+    .wellcometo__container{
+        height: 1050px;
+    }
+}
+
+/*>>>>>>>>>> @4 Кнопка<<<<<<<<<<*/
+@media screen and (max-width: 1024px){
+    .wellcometo__button{
+        display: none;
+    }
+
+    .wellcometo__button_mobile{
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Production",
+        "link": "/production"
+    },
+    {
+        "name": "Media",
+        "link": "/media"
+    },
+    {
+        "name": "News",
+        "link": "/news"
+    },
+    {
+        "name": "About",
+        "link": "/about"
+    },
+    {
+        "name": "Contact",
+        "link": "/contact"
+    }
+]

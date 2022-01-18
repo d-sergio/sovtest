@@ -1,0 +1,29 @@
+.slider__container {
+    display: flex;
+}
+
+.slider__feed{
+    display: inline-flex;
+}
+
+.slider__frame{
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.slider__prev{
+    cursor: pointer;
+    display: flex;
+}
+
+.slider__next{
+    cursor: pointer;
+    display: flex;
+}
+
+.slider__viewport{
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+}

@@ -1,0 +1,38 @@
+header {
+    height: 75px;
+    box-shadow: 0 0 10.5px rgba(0,0,0,0.41);
+    padding-left: 165px;
+    padding-right: 165px;
+}
+
+.header__logo{
+    content: url('../../images/logo.png');
+    padding: 0;
+    height: 49px;
+    width: 150px;
+}
+
+@media screen and (max-width: 767px) {
+    header{
+        background: #055c6a;
+        box-shadow: none;
+    }
+
+    .header__logo{
+        content: url("../../images/logo-white.png");
+    }
+}
+
+@media screen and (max-width:689px) {
+    header{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (min-width: 690px) and (max-width: 1024px) {
+    header{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}

@@ -1,0 +1,8 @@
+.navlink__links{
+    border-bottom: 3px solid #ffcc0000;
+    margin-bottom: -3px;
+    transition: border-bottom 0.3s ease-in;
+}
+.navlink__links:hover{
+    border-bottom: 3px solid #ffcb00;
+}

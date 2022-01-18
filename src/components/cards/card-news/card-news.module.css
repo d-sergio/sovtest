@@ -1,0 +1,43 @@
+.cardNews__container{
+    max-width: 500px;
+    width: 100%;
+
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.cardNews__title{
+    /*Обязательно указываем явно ширину 100%. Иначе будут ошибки в вычислениях
+    ширины коротких заголовков*/
+    width: 100%;
+}
+
+.cardNews__center{
+    display: inline-block; /* центрировать..*/
+    vertical-align: middle;  /* ..по вертикали */
+    line-height: 1.65rem;
+}
+
+.cardNews__container_slider{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cardNews__img{
+    width: 100%;
+    height: auto;
+}
+
+.cardNews__description{
+    margin-top: 1rem;
+    line-height: 1.688rem;
+    word-break: break-word;
+}
+
+.cardNews_marginTop{
+    margin-top: 1.5rem;
+}
+
+.cardNews__button{
+    margin-top: 1rem;
+}

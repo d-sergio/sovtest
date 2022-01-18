@@ -1,0 +1,17 @@
+.sViewer__viewport{
+    text-align: center;
+}
+
+.sViewer__viewport img{
+    max-height: 550px;
+}
+
+.sViewer__feed{
+    text-align: center;
+    overflow: hidden;
+}
+
+.sViewer__slide{
+    display: inline-flex;
+    justify-content: space-around;
+}

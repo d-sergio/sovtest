@@ -1,0 +1,114 @@
+footer{
+    height: 220px;
+    background-color: #055c6a;
+    padding-left: 165px;
+    padding-right: 165px;
+}
+
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+
+    height: 80%;
+    max-width: 1030px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+
+    color: #ffffff;
+}
+
+.footer__container a{
+    font-size: 0.8rem;
+    letter-spacing: -1px;
+    color: #ffffff;
+
+    font-family: "MontserratMedium";
+}
+
+.footer__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-right: 30px;
+}
+
+.footer__contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 25px;
+}
+
+.footer__projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__linksBundle{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 25px;
+}
+
+@media screen and (min-width: 1px) and (max-width: 349px) {
+    footer{
+        height: 420px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .footer__container{
+        flex-direction: column-reverse;
+        font-size: 1.25rem;
+        height: 90%;
+    }
+
+    .footer__container a{
+        font-size: 0.75rem;
+    }
+
+    .footer__contact{
+        height: 120px;
+    }
+
+    .footer__linksBundle{
+        height: 120px;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 690px) {
+    footer{
+        height: 220px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .footer__container{
+        font-size: 1.25rem;
+    }
+
+    .footer__container a{
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (min-width: 690px) and (max-width: 1024px) {
+    footer{
+        height: 200px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .footer__container{
+        font-size: 1.25rem;
+    }
+
+    .footer__container a{
+        font-size: 0.75rem;
+    }
+}

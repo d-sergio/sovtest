@@ -1,0 +1,24 @@
+.about__title{
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.about__production{
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.about__photos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about__photos img{
+    width: 30%;
+    height: auto;
+}
+
+.about__text{
+    text-align: justify;
+}

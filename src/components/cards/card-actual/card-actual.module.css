@@ -1,0 +1,40 @@
+.cardActual__container{
+    max-width: 500px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cardActual__center{
+    display: inline-block; /* центрировать..*/
+    vertical-align: middle;  /* ..по вертикали */
+    line-height: 1.65rem;
+}
+
+.cardActual__title{
+    /*Обязательно указываем явно ширину 100%. Иначе будут ошибки в вычислениях
+    ширины коротких заголовков*/
+    width: 100%;
+}
+
+.cardActual__img{
+    width: 100%;
+    height: auto;
+}
+
+.cardActual__description{
+    margin-top: 1rem;
+    line-height: 1.688rem;
+    word-break: break-word;
+    overflow: hidden;
+}
+
+.cardActual__button{
+    margin-top: 0.3rem;
+}
+
+@media screen and (max-width: 767px){
+    .cardActual__container{
+        max-width: 607px;
+    }
+}

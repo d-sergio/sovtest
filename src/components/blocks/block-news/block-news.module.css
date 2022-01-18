@@ -1,0 +1,12 @@
+.blockNews__gallery{
+    max-width: 1170px;
+    margin-bottom: 50px;
+
+    margin-top: 20px;
+}
+
+.blockNews__container_mobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}    
